@@ -49,5 +49,8 @@ class TestMethods(unittest.TestCase):
     def test_sub(self):
         self.assertEqual(sub(10, 5), 5)
 
+    def test_mult(self):
+        self.assertEqual(mult(2, 3), 6)
+
 if __name__ == '__main__':
     unittest.main()
