@@ -57,6 +57,9 @@ class TestMethods(unittest.TestCase):
     def test_line(self):
         self.assertEqual(line(1, 1, 1), 2)
 
+    def test_line_2(self):
+        self.assertEqual(line(1, 1, 2), 3)
+
 if __name__ == '__main__':
     unittest.main()
 
