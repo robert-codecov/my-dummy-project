@@ -1,5 +1,7 @@
 import unittest
 
+from extra import line
+
 def div(a, b):
     if a == None:
         raise Exception("a must be defined")
@@ -51,6 +53,9 @@ class TestMethods(unittest.TestCase):
 
     def test_mult(self):
         self.assertEqual(mult(2, 3), 6)
+
+    def test_line(self):
+        self.assertEqual(line(1, 1, 1), 2)
 
 if __name__ == '__main__':
     unittest.main()
